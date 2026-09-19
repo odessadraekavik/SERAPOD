@@ -51,7 +51,7 @@ Joint fatigue should not revoke your citizenship. Repeated directional keypresse
 Enter **SERAPOD, Super Earth Radial Accessibility Program for Orbital Deployment**: a customizable stratagem wheel for Helldivers 2.
 
 > “Injury is a medical condition. Inefficiency is treason.”  
-> , Super Earth Ergonomic Ordinance Directive 88-B
+> \- Super Earth Ergonomic Ordinance Directive 88-B
 
 *The Ministry, its directives, and its alarming bedside manner are fictional. The accessibility goal is real.*
 
