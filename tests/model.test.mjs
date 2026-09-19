@@ -3,6 +3,20 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {sectorAt,defaults,initialProfile,validateState,validateSettings,getFolder,sectorPath} from '../src/lib/model.js';
 const catalog=JSON.parse(await readFile(new URL('../src/data/catalog.json',import.meta.url),'utf8'));
+test('timing limits and legacy imports preserve profiles when upgrading fast delays',()=>{
+ assert.equal(defaults.gapMs,150);
+ for(const gapMs of [100,150,300])assert.equal(validateSettings({...defaults,gapMs}),'');
+ for(const gapMs of [99,301,NaN])assert.equal(validateSettings({...defaults,gapMs}),'invalidRange');
+ const p=initialProfile(catalog);
+ for(const gapMs of [15,35,95,100,200,250,300]){
+  const data={version:1,profiles:[p],activeId:p.id,settings:{...defaults,gapMs}};
+  const restored=validateState(data,catalog);
+  assert.equal(restored.settings.gapMs,gapMs<100?150:gapMs);
+  assert.equal(restored.profiles[0],p);
+  assert.equal(restored.activeId,p.id);
+ }
+ for(const gapMs of [-1,14,301])assert.throws(()=>validateState({version:1,profiles:[p],activeId:p.id,settings:{...defaults,gapMs}},catalog));
+});
 test('catalog codes are complete, unique and include known reference sequences',()=>{
  assert.ok(catalog.length>=100);assert.equal(new Set(catalog.map(c=>c.id)).size,catalog.length);
  for(const c of catalog){assert.ok(c.name);assert.ok(c.code.length>0);assert.ok(c.code.every(d=>['Up','Down','Left','Right'].includes(d)));}

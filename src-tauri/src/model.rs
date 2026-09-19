@@ -139,7 +139,7 @@ impl Config {
         if !(15..=250).contains(&s.press_ms)
             || !s.transparency.is_finite()
             || !(0.0..=80.0).contains(&s.transparency)
-            || !(15..=250).contains(&s.gap_ms)
+            || !(100..=300).contains(&s.gap_ms)
             || !s.size.is_finite()
             || !(400.0..=720.0).contains(&s.size)
             || !s.deadzone.is_finite()

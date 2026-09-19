@@ -13,9 +13,9 @@
 
 **See SERAPOD in action:** click the preview to watch the in-game demonstration on YouTube.
 
-[![Watch the SERAPOD stratagem wheel demonstration for Helldivers 2](medias/youtube-thumbnail.jpg)](https://youtu.be/WDimQbBaqJE)
+[![Watch the SERAPOD stratagem wheel demonstration for Helldivers 2](medias/youtube-thumbnail.jpg)](https://youtu.be/o3S7y8BjbNU)
 
-[Watch on YouTube](https://youtu.be/WDimQbBaqJE) · [Download the original gameplay clip](medias/ingame_preview.mp4)
+[Watch on YouTube](https://youtu.be/o3S7y8BjbNU) · [Download the original gameplay clip](medias/ingame_preview_0.8.1.mp4)
 
 <details>
 <summary>Inspect the original screenshots — editor, in-game wheel, profiles & settings</summary>
@@ -54,6 +54,12 @@ Enter **SERAPOD — Super Earth Radial Accessibility Program for Orbital Deploym
 > — Super Earth Ergonomic Ordinance Directive 88-B
 
 *The Ministry, its directives, and its alarming bedside manner are fictional. The accessibility goal is real.*
+
+## Deliberately paced input — never an instant sequence
+
+**Since 0.8.1, every directional key is separated by at least 100 ms. The default delay is 150 ms, adjustable from 100 to 300 ms.** Key press duration is additional (45 ms by default), so even the fastest allowed setting does not send the whole combination at once.
+
+The intent is to approximate deliberate manual input rather than instantaneous execution. This is a fixed, configurable pace—not a measured simulation of a particular person. SERAPOD still automates the selected sequence; macros can also include delays, and this timing does not establish official approval or settle questions of fairness.
 
 ## Accessibility first
 
@@ -101,6 +107,8 @@ No account. No subscription. No paid tier. The Ministry has misplaced the billin
 The first loadout includes Reinforce, Resupply, Orbital Precision Strike, Orbital Railcannon Strike, Supply Pack, and Machine Gun Sentry. A **Mission** folder contains Hellbomb, Super Earth Flag, SOS Beacon, and SEAF Artillery. Existing profiles are preserved when updating.
 
 Physical key bindings use scan codes: displayed letter positions follow QWERTY. Use **Capture** to bind the intended physical key on AZERTY or another layout. The game-menu hold/toggle setting must match your game settings.
+
+From **0.8.1**, the delay between keys defaults to **150 ms** and can be adjusted from **100 to 300 ms**. Previously saved or imported delays below 100 ms are upgraded to 150 ms while preserving profiles. Key press duration is a separate setting and is added to this delay.
 
 ## Updates & local storage
 

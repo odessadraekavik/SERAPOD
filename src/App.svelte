@@ -201,7 +201,7 @@
       <p class="muted">{t('captureHelp')}</p><label class="setting-row"><span>{t('mode')}</span><Select variant="mode-select" label={t('mode')} bind:value={settings.mode} options={[{value:'hold',label:t('hold')},{value:'toggle',label:t('toggle')}]}/></label>{#if settingsError}<p class="error-message">{t(settingsError)}</p>{/if}
      </section>
      <section class="panel settings-panel"><div class="panel-heading"><h2>{t('timing')}</h2></div>
-      {#each [['pressMs',15,250,5,'ms'],['gapMs',15,250,5,'ms'],['size',400,720,10,'px'],['deadzone',30,100,5,'px'],['sensitivity',0.3,3,0.1,'×']] as [key,min,max,step,unit]}<label class="range-row"><span>{t(key)}<b>{settings[key]} {unit}</b></span><input type="range" {min} {max} {step} bind:value={settings[key]}/></label>{/each}
+      {#each [['pressMs',15,250,5,'ms'],['gapMs',100,300,5,'ms'],['size',400,720,10,'px'],['deadzone',30,100,5,'px'],['sensitivity',0.3,3,0.1,'×']] as [key,min,max,step,unit]}<label class="range-row"><span>{t(key)}<b>{settings[key]} {unit}</b></span><input type="range" {min} {max} {step} bind:value={settings[key]}/></label>{/each}
       <label class="setting-row"><span>{t('glass')}</span><input type="checkbox" bind:checked={settings.glass}/></label>
       <label class="range-row"><span>{t('transparency')}<b>{settings.transparency} %</b></span><input type="range" min="0" max="80" step="5" disabled={!settings.glass} bind:value={settings.transparency}/></label><p class="muted">{t('glassHelp')}</p>
       <div class="button-row"><button class="reset-app" onclick={resetApp}>{t('resetApp')}</button><button disabled={!native} onclick={()=>updater?.check(true)}>{t('checkUpdates')}</button></div><p class="muted">{t('gameHelp')}</p>

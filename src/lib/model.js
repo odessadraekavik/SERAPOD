@@ -2,7 +2,7 @@ import {languages} from './i18n.js';
 export const arrows={Up:'↑',Right:'→',Down:'↓',Left:'←'};
 export const uid=()=>crypto.randomUUID();
 export const sequence=code=>code.map(x=>arrows[x]).join(' ');
-export const defaults={language:'auto',glass:true,transparency:35,trigger:'F1',gameKey:'ControlLeft',mode:'hold',up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight',pressMs:45,gapMs:35,size:560,deadzone:70,sensitivity:1};
+export const defaults={language:'auto',glass:true,transparency:35,trigger:'F1',gameKey:'ControlLeft',mode:'hold',up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight',pressMs:45,gapMs:150,size:560,deadzone:70,sensitivity:1};
 export const keyOptions=['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','Mouse4','Mouse5','ControlLeft','ControlRight','AltLeft','AltRight','ShiftLeft','ShiftRight','Tab','Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight',...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(x=>'Key'+x),...'0123456789'.split('').map(x=>'Digit'+x)];
 export const keyLabel=s=>s.replace('Control','Ctrl ').replace('Left','G').replace('Right','D').replace('Shift','Maj ').replace('Key','').replace('Digit','').replace('ArrowUp','↑').replace('ArrowDown','↓').replace('ArrowG','←').replace('ArrowD','→').replace('Mouse4','Souris 4').replace('Mouse5','Souris 5');
 export function initialProfile(catalog){
@@ -28,11 +28,13 @@ export function validateSettings(s){
  if(keys.slice(1).some(k=>s[k].startsWith('Mouse')))return 'keyboardOnly';
  if(new Set(keys.map(k=>s[k])).size!==keys.length)return 'duplicateKeys';
  if(!['hold','toggle'].includes(s.mode))return 'invalidMode';
- for(const [key,min,max] of [['pressMs',15,250],['gapMs',15,250],['size',400,720],['deadzone',30,100],['sensitivity',0.3,3]])if(!Number.isFinite(s[key])||s[key]<min||s[key]>max)return 'invalidRange';
+ for(const [key,min,max] of [['pressMs',15,250],['gapMs',100,300],['size',400,720],['deadzone',30,100],['sensitivity',0.3,3]])if(!Number.isFinite(s[key])||s[key]<min||s[key]>max)return 'invalidRange';
  return '';
 }
 export function validateState(data,catalog){
  if(!data||data.version!==1||!Array.isArray(data.profiles)||!data.profiles.length||data.profiles.length>32)throw Error('invalidFile');
+ // Upgrade previously valid fast timings without discarding saved profiles or imports.
+ if(Number.isFinite(data.settings?.gapMs)&&data.settings.gapMs>=15&&data.settings.gapMs<100)data.settings.gapMs=defaults.gapMs;
  const err=validateSettings(data.settings);if(err)throw Error(err);
  const ids=new Set(catalog.map(x=>x.id));const seen=new Set();let total=0;
  function visit(n,depth){
