@@ -1,4 +1,12 @@
-# SERAPOD 0.7.3 — bilan
+# SERAPOD 0.8.0 — bilan
+
+## Première publication 0.8.0
+
+- [x] Dépôt public GitHub, licence GPL-3.0-only, bannière SVG et README en anglais centré sur l'accessibilité.
+- [x] Bulletin du Haut Commandement, limitation des stratagèmes brouillés, gratuité permanente et dons redirigés vers une association au choix.
+- [x] Vérification des versions stables au démarrage et manuellement dans les options, dialogue FR/EN avec versions colorées et progression.
+- [x] Téléchargement GitHub vérifié par SHA-256, redémarrage coordonné, conservation des profils et suppression différée de l'ancien exécutable.
+- [x] Tests de versions, origine des téléchargements, intégrité et limites de suppression.
 
 ## Ajustements 0.7.3
 
