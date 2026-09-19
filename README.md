@@ -1,4 +1,4 @@
-![SERAPOD — Managed Democracy. Accessible deployment.](public/banner.svg)
+![SERAPOD — customize your wheel in the editor and deploy stratagems in game.](medias/serapod-promo.png)
 
 <p align="center">
   <a href="https://github.com/odessadraekavik/SERAPOD/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/odessadraekavik/SERAPOD?color=ffe500&amp;label=deployment"/></a>
@@ -8,6 +8,33 @@
 </p>
 
 <p align="center"><b><a href="https://github.com/odessadraekavik/SERAPOD/releases/latest">Download for Windows</a> · <a href="#field-manual">Field manual</a> · <a href="#known-issues">Known issues</a> · <a href="#donations">Donations</a></b></p>
+
+## Field footage
+
+**See SERAPOD in action:** click the preview to watch the in-game demonstration on YouTube.
+
+[![Watch the SERAPOD stratagem wheel demonstration for Helldivers 2](medias/youtube-thumbnail.jpg)](https://youtu.be/hYuc3iRCoZU)
+
+[Watch on YouTube](https://youtu.be/hYuc3iRCoZU) · [Download the original gameplay clip](medias/ingame_preview.mp4)
+
+<details>
+<summary>Inspect the original screenshots — editor, in-game wheel, profiles & settings</summary>
+
+### Radial editor
+![SERAPOD radial editor and stratagem catalogue](medias/main_window.png)
+
+### In-game wheel
+![SERAPOD overlay with Orbital Precision Strike selected in Helldivers 2](medias/ingame_wheel.png)
+
+### Profiles
+![SERAPOD profile management](medias/profiles_tab.png)
+
+### Settings
+![SERAPOD settings](medias/settings_tab.png)
+
+</details>
+
+*The promotional artwork is stylized; the screenshots above show the actual interface.*
 
 ## SUPER EARTH HIGH COMMAND BULLETIN #404
 
