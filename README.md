@@ -13,9 +13,9 @@
 
 **See SERAPOD in action:** click the preview to watch the in-game demonstration on YouTube.
 
-[![Watch the SERAPOD stratagem wheel demonstration for Helldivers 2](medias/youtube-thumbnail.jpg)](https://youtu.be/hYuc3iRCoZU)
+[![Watch the SERAPOD stratagem wheel demonstration for Helldivers 2](medias/youtube-thumbnail.jpg)](https://youtu.be/WDimQbBaqJE)
 
-[Watch on YouTube](https://youtu.be/hYuc3iRCoZU) · [Download the original gameplay clip](medias/ingame_preview.mp4)
+[Watch on YouTube](https://youtu.be/WDimQbBaqJE) · [Download the original gameplay clip](medias/ingame_preview.mp4)
 
 <details>
 <summary>Inspect the original screenshots — editor, in-game wheel, profiles & settings</summary>
