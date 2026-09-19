@@ -22,6 +22,7 @@ test('catalog codes are complete, unique and include known reference sequences',
  for(const c of catalog){assert.ok(c.name);assert.ok(c.code.length>0);assert.ok(c.code.every(d=>['Up','Down','Left','Right'].includes(d)));}
  assert.deepEqual(catalog.find(c=>c.name==='Reinforce').code,['Up','Down','Right','Left','Up']);
  assert.deepEqual(catalog.find(c=>c.name==='Orbital Precision Strike').code,['Right','Right','Up']);
+ assert.deepEqual(catalog.find(c=>c.id==='sssd-delivery').code,['Down','Down','Down','Up','Up']);
 });
 test('radial geometry handles cardinal directions, wraparound, center and empty menus',()=>{
  assert.equal(sectorAt(0,-100,4),0);assert.equal(sectorAt(100,0,4),1);assert.equal(sectorAt(0,100,4),2);assert.equal(sectorAt(-100,0,4),3);

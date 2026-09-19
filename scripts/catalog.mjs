@@ -33,5 +33,8 @@ for(const item of catalog){
  const file=files.find(f=>candidates.includes(normalize(path.basename(f,'.svg'))));
  if(file){await copyFile(file,`public/icons/${item.id}.svg`);item.icon=`/icons/${item.id}.svg`;matched++;}
 }
+// Keep the user-reported in-game correction when regenerating from the wiki snapshot.
+const sssd=catalog.find(item=>item.id==='sssd-delivery');
+if(sssd)sssd.code=['Down','Down','Down','Up','Up'];
 await writeFile('src/data/catalog.json',JSON.stringify(catalog,null,2)+'\n');
 console.log(`${catalog.length} stratagems, ${matched} local SVG icons. ${catalog.length-matched} use a fallback.`);
