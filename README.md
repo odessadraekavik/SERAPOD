@@ -1,4 +1,4 @@
-![SERAPOD — customize your wheel in the editor and deploy stratagems in game.](medias/serapod-promo.png)
+![SERAPOD, customize your wheel in the editor and deploy stratagems in game.](medias/serapod-promo.png)
 
 <p align="center">
   <a href="https://github.com/odessadraekavik/SERAPOD/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/odessadraekavik/SERAPOD?color=ffe500&amp;label=deployment&amp;cacheSeconds=300&amp;refresh=0.8.2"/></a>
@@ -18,7 +18,7 @@
 [Watch on YouTube](https://youtu.be/o3S7y8BjbNU) · [Download the original gameplay clip](medias/ingame_preview_0.8.1.mp4)
 
 <details>
-<summary>Inspect the original screenshots — editor, in-game wheel, profiles & settings</summary>
+<summary>Inspect the original screenshots, editor, in-game wheel, profiles & settings</summary>
 
 ### Radial editor
 ![SERAPOD radial editor and stratagem catalogue](medias/main_window.png)
@@ -48,18 +48,18 @@ It has come to the attention of the Ministry that severe, high-g combat drop-ins
 
 Joint fatigue should not revoke your citizenship. Repeated directional keypresses should not stand between you and a democratic orbital bombardment. Bureaucratic sympathy may be limited. Tactical accessibility is not.
 
-Enter **SERAPOD — Super Earth Radial Accessibility Program for Orbital Deployment**: a customizable stratagem wheel for Helldivers 2.
+Enter **SERAPOD, Super Earth Radial Accessibility Program for Orbital Deployment**: a customizable stratagem wheel for Helldivers 2.
 
 > “Injury is a medical condition. Inefficiency is treason.”  
-> — Super Earth Ergonomic Ordinance Directive 88-B
+> , Super Earth Ergonomic Ordinance Directive 88-B
 
 *The Ministry, its directives, and its alarming bedside manner are fictional. The accessibility goal is real.*
 
-## Deliberately paced input — never an instant sequence
+## Deliberately paced input, never an instant sequence
 
 **Since 0.8.1, every directional key is separated by at least 100 ms. The default delay is 150 ms, adjustable from 100 to 300 ms.** Key press duration is additional (45 ms by default), so even the fastest allowed setting does not send the whole combination at once.
 
-The intent is to approximate deliberate manual input rather than instantaneous execution. This is a fixed, configurable pace—not a measured simulation of a particular person. SERAPOD still automates the selected sequence; macros can also include delays, and this timing does not establish official approval or settle questions of fairness.
+The intent is to approximate deliberate manual input rather than instantaneous execution. This is a fixed, configurable pace, not a measured simulation of a particular person. SERAPOD still automates the selected sequence; macros can also include delays, and this timing does not establish official approval or settle questions of fairness.
 
 ## Accessibility first
 
