@@ -1,0 +1,15 @@
+node_modules/
+dist/
+src-tauri/target/
+.tools/
+*.log
+portable/
+detection-status*
+TODO.txt
+*.part
+*.ready
+.env
+.env.*
+*.pem
+*.key
+wiki_stratagems.html

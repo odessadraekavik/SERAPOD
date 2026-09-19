@@ -1,0 +1,35 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {sectorAt,defaults,initialProfile,validateState,validateSettings,getFolder,sectorPath} from '../src/lib/model.js';
+const catalog=JSON.parse(await readFile(new URL('../src/data/catalog.json',import.meta.url),'utf8'));
+test('catalog codes are complete, unique and include known reference sequences',()=>{
+ assert.ok(catalog.length>=100);assert.equal(new Set(catalog.map(c=>c.id)).size,catalog.length);
+ for(const c of catalog){assert.ok(c.name);assert.ok(c.code.length>0);assert.ok(c.code.every(d=>['Up','Down','Left','Right'].includes(d)));}
+ assert.deepEqual(catalog.find(c=>c.name==='Reinforce').code,['Up','Down','Right','Left','Up']);
+ assert.deepEqual(catalog.find(c=>c.name==='Orbital Precision Strike').code,['Right','Right','Up']);
+});
+test('radial geometry handles cardinal directions, wraparound, center and empty menus',()=>{
+ assert.equal(sectorAt(0,-100,4),0);assert.equal(sectorAt(100,0,4),1);assert.equal(sectorAt(0,100,4),2);assert.equal(sectorAt(-100,0,4),3);
+ assert.equal(sectorAt(-.001,-100,4),0);assert.equal(sectorAt(40,40,4),-1);assert.equal(sectorAt(100,100,0),-1);assert.equal(sectorAt(100,0,1),0);
+ assert.ok(!sectorPath(0,1).includes('NaN'));
+});
+test('sector gutters have parallel edges with constant width at both radii',()=>{
+ for(const count of [2,3,6,12]){
+  const points=[...sectorPath(0,count).matchAll(/([\d.]+),([\d.]+)/g)].map(m=>[Number(m[1])-280,Number(m[2])-280]);
+  const boundary=-Math.PI/count;
+  for(const [x,y] of [points[0],points.at(-1)])assert.ok(Math.abs(x*Math.cos(boundary)+y*Math.sin(boundary)-3)<1e-8);
+ }
+});
+test('profile import validates references, settings, sizes and duplicate identities',()=>{
+ const p=initialProfile(catalog);const data={version:1,profiles:[p],activeId:p.id,settings:{...defaults}};
+ assert.equal(validateState(data,catalog),data);
+ assert.equal(p.root.children.length,7);
+ assert.deepEqual(p.root.children.filter(n=>n.kind==='stratagem').map(n=>catalog.find(c=>c.id===n.stratagemId).name),['Reinforce','Resupply','Orbital Precision Strike','Orbital Railcannon Strike','B-1 Supply Pack','A/MG-43 Machine Gun Sentry']);
+ assert.deepEqual(p.root.children.find(n=>n.nameKey==='mission').children.map(n=>catalog.find(c=>c.id===n.stratagemId).name),['NUX-223 Hellbomb','Super Earth Flag','SoS Beacon','SEAF Artillery']);
+ assert.equal(p.nameKey,'defaultProfile');
+ const bad=structuredClone(data);bad.profiles[0].root.children.push({...bad.profiles[0].root.children[0]});assert.throws(()=>validateState(bad,catalog));
+ const badRef=structuredClone(data);badRef.profiles[0].root.children[0].stratagemId='unknown';assert.throws(()=>validateState(badRef,catalog));
+ assert.ok(validateSettings({...defaults,trigger:'ControlLeft'}));assert.ok(validateSettings({...defaults,pressMs:-1}));
+ assert.equal(getFolder(p.root,['missing']),p.root);
+});

@@ -1,0 +1,1876 @@
+[
+  {
+    "id": "orbital-precision-strike",
+    "name": "Orbital Precision Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/orbital-precision-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Precision_Strike_Stratagem_Icon_Background.svg?e78550",
+    "cooldown": "90s"
+  },
+  {
+    "id": "orbital-gatling-barrage",
+    "name": "Orbital Gatling Barrage",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/orbital-gatling-barrage.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Gatling_Barrage_Stratagem_Icon_Background.svg?f73d52",
+    "cooldown": "70s"
+  },
+  {
+    "id": "orbital-gas-strike",
+    "name": "Orbital Gas Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/orbital-gas-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Gas_Strike_Stratagem_Icon_Background.svg?668a1e",
+    "cooldown": "75s"
+  },
+  {
+    "id": "orbital-120mm-he-barrage",
+    "name": "Orbital 120mm HE Barrage",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/orbital-120mm-he-barrage.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_120mm_HE_Barrage_Stratagem_Icon_Background.svg?17de59",
+    "cooldown": "180s"
+  },
+  {
+    "id": "orbital-airburst-strike",
+    "name": "Orbital Airburst Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Right"
+    ],
+    "icon": "/icons/orbital-airburst-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Airburst_Strike_Stratagem_Icon_Background.svg?c77894",
+    "cooldown": "100s"
+  },
+  {
+    "id": "orbital-smoke-strike",
+    "name": "Orbital Smoke Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/orbital-smoke-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Smoke_Strike_Stratagem_Icon_Background.svg?a05463",
+    "cooldown": "75s"
+  },
+  {
+    "id": "orbital-ems-strike",
+    "name": "Orbital EMS Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Left",
+      "Down"
+    ],
+    "icon": "/icons/orbital-ems-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_EMS_Strike_Stratagem_Icon_Background.svg?5e3ef9",
+    "cooldown": "75s"
+  },
+  {
+    "id": "orbital-380mm-he-barrage",
+    "name": "Orbital 380mm HE Barrage",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Down",
+      "Up",
+      "Up",
+      "Left",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/orbital-380mm-he-barrage.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_380mm_HE_Barrage_Stratagem_Icon_Background.svg?eb3f95",
+    "cooldown": "240s"
+  },
+  {
+    "id": "orbital-walking-barrage",
+    "name": "Orbital Walking Barrage",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Down",
+      "Right",
+      "Down",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/orbital-walking-barrage.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Walking_Barrage_Stratagem_Icon_Background.svg?cb3bf0",
+    "cooldown": "240s"
+  },
+  {
+    "id": "orbital-laser",
+    "name": "Orbital Laser",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Down",
+      "Up",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/orbital-laser.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Laser_Stratagem_Icon_Background.svg?ae2ad3",
+    "cooldown": "300s"
+  },
+  {
+    "id": "orbital-napalm-barrage",
+    "name": "Orbital Napalm Barrage",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/orbital-napalm-barrage.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Napalm_Barrage_Stratagem_Icon_Background.svg?be78c4",
+    "cooldown": "240s"
+  },
+  {
+    "id": "orbital-railcannon-strike",
+    "name": "Orbital Railcannon Strike",
+    "category": "Orbital Strikes",
+    "code": [
+      "Right",
+      "Up",
+      "Down",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/orbital-railcannon-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Railcannon_Strike_Stratagem_Icon_Background.svg?ee9232",
+    "cooldown": "180s"
+  },
+  {
+    "id": "eagle-gas-airstrike",
+    "name": "Eagle Gas Airstrike",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/eagle-gas-airstrike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Gas_Airstrike_Stratagem_Icon_Background.svg?e47dc1",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-strafing-run",
+    "name": "Eagle Strafing Run",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Right"
+    ],
+    "icon": "/icons/eagle-strafing-run.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Strafing_Run_Stratagem_Icon_Background.svg?fe286e",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-airstrike",
+    "name": "Eagle Airstrike",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/eagle-airstrike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Airstrike_Stratagem_Icon_Background.svg?b497fe",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-cluster-bomb",
+    "name": "Eagle Cluster Bomb",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Down",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/eagle-cluster-bomb.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Cluster_Bomb_Stratagem_Icon_Background.svg?b730d4",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-smoke-strike",
+    "name": "Eagle Smoke Strike",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/eagle-smoke-strike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Smoke_Strike_Stratagem_Icon_Background.svg?159f1f",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-napalm-airstrike",
+    "name": "Eagle Napalm Airstrike",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/eagle-napalm-airstrike.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Napalm_Airstrike_Stratagem_Icon_Background.svg?735c8b",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-110mm-rocket-pods",
+    "name": "Eagle 110mm Rocket Pods",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/eagle-110mm-rocket-pods.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_110mm_Rocket_Pods_Stratagem_Icon_Background.svg?2e218a",
+    "cooldown": "15s"
+  },
+  {
+    "id": "eagle-500kg-bomb",
+    "name": "Eagle 500kg Bomb",
+    "category": "Eagle Strikes",
+    "code": [
+      "Up",
+      "Right",
+      "Down",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/eagle-500kg-bomb.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_500kg_Bomb_Stratagem_Icon_Background.svg?48a0f3",
+    "cooldown": "15s"
+  },
+  {
+    "id": "mg-43-machine-gun",
+    "name": "MG-43 Machine Gun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/mg-43-machine-gun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Machine_Gun_Stratagem_Icon_Background.svg?35fc07",
+    "cooldown": "480s"
+  },
+  {
+    "id": "eat-17-expendable-anti-tank",
+    "name": "EAT-17 Expendable Anti-Tank",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/eat-17-expendable-anti-tank.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Expendable_Anti-Tank_Stratagem_Icon_Background.svg?d52ad8",
+    "cooldown": "70s"
+  },
+  {
+    "id": "m-105-stalwart",
+    "name": "M-105 Stalwart",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/m-105-stalwart.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Stalwart_Stratagem_Icon_Background.svg?89f988",
+    "cooldown": "480s"
+  },
+  {
+    "id": "las-98-laser-cannon",
+    "name": "LAS-98 Laser Cannon",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/las-98-laser-cannon.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Laser_Cannon_Stratagem_Icon_Background.svg?21b5f6",
+    "cooldown": "480s"
+  },
+  {
+    "id": "apw-1-anti-materiel-rifle",
+    "name": "APW-1 Anti-Materiel Rifle",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/apw-1-anti-materiel-rifle.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Anti-Materiel_Rifle_Stratagem_Icon_Background.svg?37652d",
+    "cooldown": "480s"
+  },
+  {
+    "id": "gr-8-recoilless-rifle",
+    "name": "GR-8 Recoilless Rifle",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Left"
+    ],
+    "icon": "/icons/gr-8-recoilless-rifle.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Recoilless_Rifle_Stratagem_Icon_Background.svg?aaa0b7",
+    "cooldown": "480s"
+  },
+  {
+    "id": "gl-21-grenade-launcher",
+    "name": "GL-21 Grenade Launcher",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Down"
+    ],
+    "icon": "/icons/gl-21-grenade-launcher.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Grenade_Launcher_Stratagem_Icon_Background.svg?168a60",
+    "cooldown": "480s"
+  },
+  {
+    "id": "flam-40-flamethrower",
+    "name": "FLAM-40 Flamethrower",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/flam-40-flamethrower.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Flamethrower_Stratagem_Icon_Background.svg?648ed8",
+    "cooldown": "480s"
+  },
+  {
+    "id": "mg-206-heavy-machine-gun",
+    "name": "MG-206 Heavy Machine Gun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/mg-206-heavy-machine-gun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Heavy_Machine_Gun_Stratagem_Icon_Background.svg?7f60eb",
+    "cooldown": "480s"
+  },
+  {
+    "id": "ac-8-autocannon",
+    "name": "AC-8 Autocannon",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/ac-8-autocannon.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Autocannon_Stratagem_Icon_Background.svg?556cf5",
+    "cooldown": "480s"
+  },
+  {
+    "id": "arc-3-arc-thrower",
+    "name": "ARC-3 Arc Thrower",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Left",
+      "Left"
+    ],
+    "icon": "/icons/arc-3-arc-thrower.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Arc_Thrower_Stratagem_Icon_Background.svg?5909af",
+    "cooldown": "480s"
+  },
+  {
+    "id": "las-99-quasar-cannon",
+    "name": "LAS-99 Quasar Cannon",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/las-99-quasar-cannon.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Quasar_Cannon_Stratagem_Icon_Background.svg?559764",
+    "cooldown": "480s"
+  },
+  {
+    "id": "rl-77-airburst-rocket-launcher",
+    "name": "RL-77 Airburst Rocket Launcher",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Up",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/rl-77-airburst-rocket-launcher.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Airburst_Rocket_Launcher_Stratagem_Icon_Background.svg?6755a7",
+    "cooldown": "480s"
+  },
+  {
+    "id": "mls-4x-commando",
+    "name": "MLS-4X Commando",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/mls-4x-commando.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Commando_Stratagem_Icon_Background.svg?6ea896",
+    "cooldown": "120s"
+  },
+  {
+    "id": "faf-14-spear",
+    "name": "FAF-14 Spear",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Up",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/faf-14-spear.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Spear_Stratagem_Icon_Background.svg?3f7623",
+    "cooldown": "480s"
+  },
+  {
+    "id": "rs-422-railgun",
+    "name": "RS-422 Railgun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/rs-422-railgun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Railgun_Stratagem_Icon_Background.svg?7030a2",
+    "cooldown": "480s"
+  },
+  {
+    "id": "sta-x3-w-a-s-p-launcher",
+    "name": "StA-X3 W.A.S.P. Launcher",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Up",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/sta-x3-w-a-s-p-launcher.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/W.A.S.P._Launcher_Stratagem_Icon_Background.svg?a33ba8",
+    "cooldown": "480s"
+  },
+  {
+    "id": "cqc-20-breaching-hammer",
+    "name": "CQC-20 Breaching Hammer",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Left",
+      "Up"
+    ],
+    "icon": "/icons/cqc-20-breaching-hammer.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Breaching_Hammer_Stratagem_Icon_Background.svg?65dd9b",
+    "cooldown": "480s"
+  },
+  {
+    "id": "plas-45-epoch",
+    "name": "PLAS-45 Epoch",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/plas-45-epoch.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Epoch_Stratagem_Icon_Background.svg?bfe6b1",
+    "cooldown": "480s"
+  },
+  {
+    "id": "mgx-42-bullet-storm",
+    "name": "MGX-42 Bullet Storm",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Right",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/mgx-42-bullet-storm.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Bullet_Storm_Stratagem_Icon_Background.svg?97328f",
+    "cooldown": "70s"
+  },
+  {
+    "id": "s-11-speargun",
+    "name": "S-11 Speargun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/s-11-speargun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Speargun_Stratagem_Icon_Background.svg?2f0be9",
+    "cooldown": "480s"
+  },
+  {
+    "id": "cqc-9-defoliation-tool",
+    "name": "CQC-9 Defoliation Tool",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/cqc-9-defoliation-tool.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Defoliation_Tool_Stratagem_Icon_Background.svg?418556",
+    "cooldown": "480s"
+  },
+  {
+    "id": "gl-52-de-escalator",
+    "name": "GL-52 De-Escalator",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Right",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/gl-52-de-escalator.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/De-Escalator_Stratagem_Icon_Background.svg?7a9dca",
+    "cooldown": "480s"
+  },
+  {
+    "id": "eat-700-expendable-napalm",
+    "name": "EAT-700 Expendable Napalm",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/eat-700-expendable-napalm.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Expendable_Napalm_Stratagem_Icon_Background.svg?117778",
+    "cooldown": "140s"
+  },
+  {
+    "id": "tx-41-sterilizer",
+    "name": "TX-41 Sterilizer",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Down",
+      "Left"
+    ],
+    "icon": "/icons/tx-41-sterilizer.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Sterilizer_Stratagem_Icon_Background.svg?a42db7",
+    "cooldown": "480s"
+  },
+  {
+    "id": "eat-411-leveller",
+    "name": "EAT-411 Leveller",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/eat-411-leveller.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Leveller_Stratagem_Icon_Background.svg?8f0c64",
+    "cooldown": "140s"
+  },
+  {
+    "id": "gl-28-belt-fed-grenade-launcher",
+    "name": "GL-28 Belt-Fed Grenade Launcher",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/gl-28-belt-fed-grenade-launcher.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Belt-Fed_Grenade_Launcher_Stratagem_Icon_Background.svg?4c99f1",
+    "cooldown": "480s"
+  },
+  {
+    "id": "b-md-c4-pack",
+    "name": "B/MD C4 Pack",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Right",
+      "Up",
+      "Up",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/b-md-c4-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/C4_Pack_Stratagem_Icon_Background.svg?bfb8f2",
+    "cooldown": "480s"
+  },
+  {
+    "id": "ms-11-solo-silo",
+    "name": "MS-11 Solo Silo",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/ms-11-solo-silo.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Solo_Silo_Stratagem_Icon_Background.svg?69f961",
+    "cooldown": "180s"
+  },
+  {
+    "id": "b-flam-80-cremator",
+    "name": "B/FLAM-80 Cremator",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/b-flam-80-cremator.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Cremator_Stratagem_Icon_Background.svg?ce54a7",
+    "cooldown": "480s"
+  },
+  {
+    "id": "m-1000-maxigun",
+    "name": "M-1000 Maxigun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/m-1000-maxigun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Maxigun_Stratagem_Icon_Background.svg?d08884",
+    "cooldown": "480s"
+  },
+  {
+    "id": "cqc-1-one-true-flag",
+    "name": "CQC-1 One True Flag",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/cqc-1-one-true-flag.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/One_True_Flag_Stratagem_Icon_Background.svg?e919be",
+    "cooldown": "480s"
+  },
+  {
+    "id": "40-k-meltagun",
+    "name": "40-K Meltagun",
+    "category": "Support Weapons",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Left",
+      "Down"
+    ],
+    "icon": "/icons/40-k-meltagun.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Meltagun_Stratagem_Icon_Background.svg?c412fb",
+    "cooldown": "480s"
+  },
+  {
+    "id": "b-1-supply-pack",
+    "name": "B-1 Supply Pack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/b-1-supply-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Supply_Pack_Stratagem_Icon_Background.svg?6f6c53",
+    "cooldown": "480s"
+  },
+  {
+    "id": "lift-850-jump-pack",
+    "name": "LIFT-850 Jump Pack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/lift-850-jump-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Jump_Pack_Stratagem_Icon_Background.svg?464278",
+    "cooldown": "480s"
+  },
+  {
+    "id": "sh-20-ballistic-shield-backpack",
+    "name": "SH-20 Ballistic Shield Backpack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Left",
+      "Down",
+      "Down",
+      "Up",
+      "Left"
+    ],
+    "icon": "/icons/sh-20-ballistic-shield-backpack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Ballistic_Shield_Backpack_Stratagem_Icon_Background.svg?6697d4",
+    "cooldown": "240s"
+  },
+  {
+    "id": "ax-ar-23-guard-dog",
+    "name": "AX/AR-23 Guard Dog",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/ax-ar-23-guard-dog.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Guard_Dog_Stratagem_Icon_Background.svg?eb2b15",
+    "cooldown": "480s"
+  },
+  {
+    "id": "ax-las-5-rover",
+    "name": "AX/LAS-5 Rover",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Right",
+      "Right"
+    ],
+    "icon": "/icons/ax-las-5-rover.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Rover_Stratagem_Icon_Background.svg?12ad26",
+    "cooldown": "480s"
+  },
+  {
+    "id": "sh-32-shield-generator-pack",
+    "name": "SH-32 Shield Generator Pack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Right",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/sh-32-shield-generator-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Shield_Generator_Pack_Stratagem_Icon_Background.svg?2f4980",
+    "cooldown": "480s"
+  },
+  {
+    "id": "sh-51-directional-shield",
+    "name": "SH-51 Directional Shield",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Right",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/sh-51-directional-shield.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Directional_Shield_Stratagem_Icon_Background.svg?a0bd68",
+    "cooldown": "300s"
+  },
+  {
+    "id": "ax-flam-75-hot-dog",
+    "name": "AX/FLAM-75 Hot Dog",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Left",
+      "Left"
+    ],
+    "icon": "/icons/ax-flam-75-hot-dog.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Hot_Dog_Stratagem_Icon_Background.svg?c8e42d",
+    "cooldown": "480s"
+  },
+  {
+    "id": "b-100-portable-hellbomb",
+    "name": "B-100 Portable Hellbomb",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Right",
+      "Up",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/b-100-portable-hellbomb.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Portable_Hellbomb_Stratagem_Icon_Background.svg?e8bd76",
+    "cooldown": "300s"
+  },
+  {
+    "id": "ax-arc-3-k-9",
+    "name": "AX/ARC-3 K-9",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Right",
+      "Left"
+    ],
+    "icon": "/icons/ax-arc-3-k-9.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/K-9_Stratagem_Icon_Background.svg?3ed7fe",
+    "cooldown": "480s"
+  },
+  {
+    "id": "lift-860-hover-pack",
+    "name": "LIFT-860 Hover Pack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Up",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/lift-860-hover-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Hover_Pack_Stratagem_Icon_Background.svg?63fe63",
+    "cooldown": "480s"
+  },
+  {
+    "id": "ax-tx-13-dog-breath",
+    "name": "AX/TX-13 Dog Breath",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/ax-tx-13-dog-breath.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Dog_Breath_Stratagem_Icon_Background.svg?b93a24",
+    "cooldown": "480s"
+  },
+  {
+    "id": "lift-182-warp-pack",
+    "name": "LIFT-182 Warp Pack",
+    "category": "Backpacks",
+    "code": [
+      "Down",
+      "Left",
+      "Right",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/lift-182-warp-pack.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Warp_Pack_Stratagem_Icon_Background.svg?b27510",
+    "cooldown": "480s"
+  },
+  {
+    "id": "m-103-supply-frv",
+    "name": "M-103 Supply FRV",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Left",
+      "Left",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/m-103-supply-frv.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Supply_FRV_Stratagem_Icon_Background.svg?415445",
+    "cooldown": "480s"
+  },
+  {
+    "id": "m-104-incinerator-frv",
+    "name": "M-104 Incinerator FRV",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Left",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/m-104-incinerator-frv.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Incinerator_FRV_Stratagem_Icon_Background.svg?f5764f",
+    "cooldown": "480s"
+  },
+  {
+    "id": "exo-49-emancipator-exosuit",
+    "name": "EXO-49 Emancipator Exosuit",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Up",
+      "Left",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/exo-49-emancipator-exosuit.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Emancipator_Exosuit_Stratagem_Icon_Background.svg?336419",
+    "cooldown": "420s"
+  },
+  {
+    "id": "exo-45-patriot-exosuit",
+    "name": "EXO-45 Patriot Exosuit",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Up",
+      "Left",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/exo-45-patriot-exosuit.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Patriot_Exosuit_Stratagem_Icon_Background.svg?3fa7de",
+    "cooldown": "420s"
+  },
+  {
+    "id": "m-102-gunner-frv",
+    "name": "M-102 Gunner FRV",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Right",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/m-102-gunner-frv.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg?d9bba1",
+    "cooldown": "480s"
+  },
+  {
+    "id": "td-220-bastion-mk-xvi",
+    "name": "TD-220 Bastion MK XVI",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/td-220-bastion-mk-xvi.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Bastion_MK_XVI_Stratagem_Icon_Background.svg?9de952",
+    "cooldown": "780s"
+  },
+  {
+    "id": "exo-55-breakthrough-exosuit",
+    "name": "EXO-55 Breakthrough Exosuit",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Left",
+      "Right",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/exo-55-breakthrough-exosuit.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Breakthrough_Exosuit_Stratagem_Icon_Background.svg?d9bc7c",
+    "cooldown": "420s"
+  },
+  {
+    "id": "exo-51-lumberer-exosuit",
+    "name": "EXO-51 Lumberer Exosuit",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Up",
+      "Right",
+      "Left",
+      "Up"
+    ],
+    "icon": "/icons/exo-51-lumberer-exosuit.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Lumberer_Exosuit_Stratagem_Icon_Background.svg?c3895f",
+    "cooldown": "420s"
+  },
+  {
+    "id": "a-mg-43-machine-gun-sentry",
+    "name": "A/MG-43 Machine Gun Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/a-mg-43-machine-gun-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Machine_Gun_Sentry_Stratagem_Icon_Background.svg?331c9d",
+    "cooldown": "90s"
+  },
+  {
+    "id": "a-g-16-gatling-sentry",
+    "name": "A/G-16 Gatling Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Left"
+    ],
+    "icon": "/icons/a-g-16-gatling-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Gatling_Sentry_Stratagem_Icon_Background.svg?7ee8f3",
+    "cooldown": "150s"
+  },
+  {
+    "id": "a-ac-8-autocannon-sentry",
+    "name": "A/AC-8 Autocannon Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Up",
+      "Left",
+      "Up"
+    ],
+    "icon": "/icons/a-ac-8-autocannon-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Autocannon_Sentry_Stratagem_Icon_Background.svg?428b69",
+    "cooldown": "150s"
+  },
+  {
+    "id": "a-m-12-mortar-sentry",
+    "name": "A/M-12 Mortar Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/a-m-12-mortar-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Mortar_Sentry_Stratagem_Icon_Background.svg?30dea2",
+    "cooldown": "180s"
+  },
+  {
+    "id": "a-mls-4x-rocket-sentry",
+    "name": "A/MLS-4X Rocket Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Left"
+    ],
+    "icon": "/icons/a-mls-4x-rocket-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Rocket_Sentry_Stratagem_Icon_Background.svg?1af08c",
+    "cooldown": "150s"
+  },
+  {
+    "id": "a-arc-3-tesla-tower",
+    "name": "A/ARC-3 Tesla Tower",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/a-arc-3-tesla-tower.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Tesla_Tower_Stratagem_Icon_Background.svg?a40a2e",
+    "cooldown": "120s"
+  },
+  {
+    "id": "a-m-23-ems-mortar-sentry",
+    "name": "A/M-23 EMS Mortar Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Right"
+    ],
+    "icon": "/icons/a-m-23-ems-mortar-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/EMS_Mortar_Sentry_Stratagem_Icon_Background.svg?202fdc",
+    "cooldown": "180s"
+  },
+  {
+    "id": "a-las-98-laser-sentry",
+    "name": "A/LAS-98 Laser Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/a-las-98-laser-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Laser_Sentry_Stratagem_Icon_Background.svg?90ea4a",
+    "cooldown": "150s"
+  },
+  {
+    "id": "a-flam-40-flame-sentry",
+    "name": "A/FLAM-40 Flame Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/a-flam-40-flame-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Flame_Sentry_Stratagem_Icon_Background.svg?9214db",
+    "cooldown": "100s"
+  },
+  {
+    "id": "a-gm-17-gas-mortar-sentry",
+    "name": "A/GM-17 Gas Mortar Sentry",
+    "category": "Sentries",
+    "code": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left"
+    ],
+    "icon": "/icons/a-gm-17-gas-mortar-sentry.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Gas_Mortar_Sentry_Stratagem_Icon_Background.svg?8948b9",
+    "cooldown": "180s"
+  },
+  {
+    "id": "md-6-anti-personnel-minefield",
+    "name": "MD-6 Anti-Personnel Minefield",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/md-6-anti-personnel-minefield.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Anti-Personnel_Minefield_Stratagem_Icon_Background.svg?ac79b4",
+    "cooldown": "120s"
+  },
+  {
+    "id": "md-i4-incendiary-mines",
+    "name": "MD-I4 Incendiary Mines",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Left",
+      "Left",
+      "Down"
+    ],
+    "icon": "/icons/md-i4-incendiary-mines.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Incendiary_Mines_Stratagem_Icon_Background.svg?6c612f",
+    "cooldown": "120s"
+  },
+  {
+    "id": "md-17-anti-tank-mines",
+    "name": "MD-17 Anti-Tank Mines",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Left",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/md-17-anti-tank-mines.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Anti-Tank_Mines_Stratagem_Icon_Background.svg?4573f2",
+    "cooldown": "120s"
+  },
+  {
+    "id": "fx-12-shield-generator-relay",
+    "name": "FX-12 Shield Generator Relay",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Right",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/fx-12-shield-generator-relay.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Shield_Generator_Relay_Stratagem_Icon_Background.svg?8f5149",
+    "cooldown": "90s"
+  },
+  {
+    "id": "e-mg-101-hmg-emplacement",
+    "name": "E/MG-101 HMG Emplacement",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Right",
+      "Right",
+      "Left"
+    ],
+    "icon": "/icons/e-mg-101-hmg-emplacement.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/HMG_Emplacement_Stratagem_Icon_Background.svg?204f0f",
+    "cooldown": "180s"
+  },
+  {
+    "id": "e-gl-21-grenadier-battlement",
+    "name": "E/GL-21 Grenadier Battlement",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Right",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/e-gl-21-grenadier-battlement.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Grenadier_Battlement_Stratagem_Icon_Background.svg?80ed1c",
+    "cooldown": "120s"
+  },
+  {
+    "id": "md-8-gas-mines",
+    "name": "MD-8 Gas Mines",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Left",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/md-8-gas-mines.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Gas_Mines_Stratagem_Icon_Background.svg?b10ef8",
+    "cooldown": "120s"
+  },
+  {
+    "id": "e-at-12-anti-tank-emplacement",
+    "name": "E/AT-12 Anti-Tank Emplacement",
+    "category": "Emplacements",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Right",
+      "Right",
+      "Right"
+    ],
+    "icon": "/icons/e-at-12-anti-tank-emplacement.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Anti-Tank_Emplacement_Stratagem_Icon_Background.svg?d8adfc",
+    "cooldown": "180s"
+  },
+  {
+    "id": "eagle-rearm",
+    "name": "Eagle Rearm",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Up",
+      "Left",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/eagle-rearm.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Eagle_Rearm_Stratagem_Icon_Background.svg?ddcd30",
+    "cooldown": "0s"
+  },
+  {
+    "id": "call-in-super-destroyer",
+    "name": "Call In Super Destroyer",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Up",
+      "Down",
+      "Down",
+      "Left",
+      "Right",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/call-in-super-destroyer.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Call_In_Super_Destroyer_Stratagem_Icon_Background.svg?f8ee42",
+    "cooldown": "N/A"
+  },
+  {
+    "id": "sos-beacon",
+    "name": "SoS Beacon",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Down",
+      "Right",
+      "Up"
+    ],
+    "icon": "/icons/sos-beacon.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/SOS_Beacon_Stratagem_Icon_Background.svg?390b65",
+    "cooldown": "0s"
+  },
+  {
+    "id": "resupply",
+    "name": "Resupply",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "icon": "/icons/resupply.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Resupply_Stratagem_Icon_Background.svg?e011d4",
+    "cooldown": "180s"
+  },
+  {
+    "id": "reinforce",
+    "name": "Reinforce",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Down",
+      "Right",
+      "Left",
+      "Up"
+    ],
+    "icon": "/icons/reinforce.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Reinforce_Stratagem_Icon_Background.svg?c9d622",
+    "cooldown": "0s"
+  },
+  {
+    "id": "cargo-container",
+    "name": "Cargo Container",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Up",
+      "Down",
+      "Down",
+      "Right",
+      "Down"
+    ],
+    "icon": "/icons/cargo-container.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Cargo_Container_Stratagem_Icon_Background.svg?60d35b",
+    "cooldown": "0s"
+  },
+  {
+    "id": "nux-223-hellbomb",
+    "name": "NUX-223 Hellbomb",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Up",
+      "Left",
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/nux-223-hellbomb.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Hellbomb_Stratagem_Icon_Background.svg?4be6bb",
+    "cooldown": "30s"
+  },
+  {
+    "id": "seismic-probe",
+    "name": "Seismic Probe",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Up",
+      "Left",
+      "Right",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/seismic-probe.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Seismic_Probe_Stratagem_Icon_Background.svg?9631fa",
+    "cooldown": "0s"
+  },
+  {
+    "id": "sssd-delivery",
+    "name": "SSSD Delivery",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Down",
+      "Down",
+      "Down",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/sssd-delivery.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Upload_Data_Stratagem_Icon_Background.svg?a4a565",
+    "cooldown": "0s"
+  },
+  {
+    "id": "tectonic-drill",
+    "name": "Tectonic Drill",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Down",
+      "Up",
+      "Down",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/tectonic-drill.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Drill_Stratagem_Icon_Background.svg?4379f7",
+    "cooldown": "0s"
+  },
+  {
+    "id": "upload-data",
+    "name": "Upload Data",
+    "category": "Mission Stratagems",
+    "code": [
+      "Left",
+      "Right",
+      "Up",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/upload-data.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Upload_Data_Stratagem_Icon_Background.svg?a4a565",
+    "cooldown": "0s"
+  },
+  {
+    "id": "reinforcement-pods",
+    "name": "Reinforcement Pods",
+    "category": "Mission Stratagems",
+    "code": [
+      "Left",
+      "Right",
+      "Up",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/reinforcement-pods.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Upload_Data_Stratagem_Icon_Background.svg?a4a565",
+    "cooldown": "N/A"
+  },
+  {
+    "id": "aquifer-drill",
+    "name": "Aquifer Drill",
+    "category": "Mission Stratagems",
+    "code": [
+      "Left",
+      "Left",
+      "Left",
+      "Up",
+      "Down",
+      "Right",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/aquifer-drill.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Drill_Stratagem_Icon_Background.svg?4379f7",
+    "cooldown": "0s"
+  },
+  {
+    "id": "portable-comms-relay",
+    "name": "Portable Comms Relay",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Up",
+      "Down",
+      "Down",
+      "Left",
+      "Left",
+      "Down"
+    ],
+    "icon": "/icons/portable-comms-relay.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Cargo_Container_Stratagem_Icon_Background.svg?60d35b",
+    "cooldown": "0s"
+  },
+  {
+    "id": "prospecting-drill",
+    "name": "Prospecting Drill",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Right",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/prospecting-drill.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Drill_Stratagem_Icon_Background.svg?4379f7",
+    "cooldown": "0s"
+  },
+  {
+    "id": "hive-breaker-drill",
+    "name": "Hive Breaker Drill",
+    "category": "Mission Stratagems",
+    "code": [
+      "Left",
+      "Up",
+      "Down",
+      "Right",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/hive-breaker-drill.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Drill_Stratagem_Icon_Background.svg?4379f7",
+    "cooldown": "0s"
+  },
+  {
+    "id": "activate-e-711-extraction-drill",
+    "name": "Activate E-711 Extraction Drill",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Down",
+      "Left",
+      "Left",
+      "Down",
+      "Down"
+    ],
+    "icon": "/icons/activate-e-711-extraction-drill.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Drill_Stratagem_Icon_Background.svg?4379f7",
+    "cooldown": "0s"
+  },
+  {
+    "id": "dark-fluid-vessel",
+    "name": "Dark Fluid Vessel",
+    "category": "Mission Stratagems",
+    "code": [
+      "Up",
+      "Left",
+      "Right",
+      "Down",
+      "Up",
+      "Up"
+    ],
+    "icon": "/icons/dark-fluid-vessel.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Dark_Fluid_Vessel_Stratagem_Icon_Background.svg?ce7771",
+    "cooldown": "30s"
+  },
+  {
+    "id": "super-earth-flag",
+    "name": "Super Earth Flag",
+    "category": "Mission Stratagems",
+    "code": [
+      "Down",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "icon": "/icons/super-earth-flag.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Super_Earth_Flag_Stratagem_Icon_Background.svg?cb3975",
+    "cooldown": "0s"
+  },
+  {
+    "id": "seaf-artillery",
+    "name": "SEAF Artillery",
+    "category": "Mission Stratagems",
+    "code": [
+      "Right",
+      "Up",
+      "Up",
+      "Down"
+    ],
+    "icon": "/icons/seaf-artillery.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/SEAF_Artillery_Stratagem_Icon_Background.svg?f72d95",
+    "cooldown": "0s"
+  },
+  {
+    "id": "tactical-video-camera",
+    "name": "Tactical Video Camera",
+    "category": "Mission Stratagems",
+    "code": [
+      "Right",
+      "Down",
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Up"
+    ],
+    "icon": "/icons/fallback.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/thumb/Placeholder.png/50px-Placeholder.png?4aae5f",
+    "cooldown": "0s"
+  },
+  {
+    "id": "orbital-illumination-flare",
+    "name": "Orbital Illumination Flare",
+    "category": "Mission Stratagems",
+    "code": [
+      "Right",
+      "Right",
+      "Left",
+      "Left"
+    ],
+    "icon": "/icons/orbital-illumination-flare.svg",
+    "source": "https://helldivers.wiki.gg/wiki/Stratagems",
+    "wikiIcon": "/images/Orbital_Illumination_Flare_Stratagem_Icon_Background.svg?eb95f9",
+    "cooldown": "N/A"
+  }
+]

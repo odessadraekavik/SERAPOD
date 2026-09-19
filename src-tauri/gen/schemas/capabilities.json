@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Local editor and non-interactive radial overlay","local":true,"windows":["main","overlay"],"permissions":["core:default"]}}

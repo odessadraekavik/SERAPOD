@@ -1,0 +1,27 @@
+{
+  "name": "serapod",
+  "version": "0.8.0",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./jsconfig.json",
+    "test": "node --test tests/*.test.mjs",
+    "tauri": "tauri",
+    "catalog": "node scripts/catalog.mjs"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "svelte": "^5.38.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "@tauri-apps/cli": "^2.8.0",
+    "vite": "^7.1.0",
+    "svelte-check": "^4.3.0",
+    "typescript": "^5.9.0",
+    "cheerio": "^1.1.2"
+  }
+}
