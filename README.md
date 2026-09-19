@@ -1,7 +1,7 @@
 ![SERAPOD, customize your wheel in the editor and deploy stratagems in game.](medias/serapod-promo.png)
 
 <p align="center">
-  <a href="https://github.com/odessadraekavik/SERAPOD/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/odessadraekavik/SERAPOD?color=ffe500&amp;label=deployment&amp;cacheSeconds=300&amp;refresh=0.8.2"/></a>
+  <a href="https://github.com/odessadraekavik/SERAPOD/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/odessadraekavik/SERAPOD?color=ffe500&amp;label=deployment&amp;cacheSeconds=300&amp;refresh=0.8.3"/></a>
   <a href="LICENSE"><img alt="GPL-3.0" src="https://img.shields.io/badge/license-GPL--3.0-blue"/></a>
   <img alt="Windows" src="https://img.shields.io/badge/platform-Windows-697687"/>
   <img alt="Always free" src="https://img.shields.io/badge/price-ALWAYS%20FREE-8edea3"/>
