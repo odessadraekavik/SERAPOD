@@ -205,9 +205,9 @@ unsafe extern "system" fn mouse_hook(code: i32, w: WPARAM, l: LPARAM) -> LRESULT
         let data = &*(l as *const MSLLHOOKSTRUCT);
         if data.flags & LLMHF_INJECTED == 0 {
             let msg = w as u32;
-            if msg == WM_XBUTTONDOWN || msg == WM_XBUTTONUP {
-                let key = 0x10000 + (data.mouseData >> 16);
-                if key == TRIGGER.load(SeqCst) && trigger_event(msg == WM_XBUTTONDOWN) {
+            if matches!(msg, WM_XBUTTONDOWN | WM_XBUTTONUP | WM_MBUTTONDOWN | WM_MBUTTONUP) {
+                let key = if matches!(msg, WM_MBUTTONDOWN | WM_MBUTTONUP) { 0x10003 } else { 0x10000 + (data.mouseData >> 16) };
+                if key == TRIGGER.load(SeqCst) && trigger_event(matches!(msg, WM_XBUTTONDOWN | WM_MBUTTONDOWN)) {
                     return 1;
                 }
             }
@@ -587,7 +587,9 @@ pub fn start(app: tauri::AppHandle) {
             match rx.recv_timeout(Duration::from_millis(8)) {
                 Ok(Event::Configure(c)) => {
                     e.close();
-                    let key = if c.settings.trigger == "Mouse4" {
+                    let key = if c.settings.trigger == "Mouse3" {
+                        0x10003
+                    } else if c.settings.trigger == "Mouse4" {
                         0x10001
                     } else if c.settings.trigger == "Mouse5" {
                         0x10002

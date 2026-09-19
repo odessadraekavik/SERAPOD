@@ -62,8 +62,8 @@
   "left": "Gauche",
   "right": "Droite",
   "capture": "Capturer",
-  "recording": "Appuie sur une touche…",
-  "captureHelp": "Les lettres indiquent les positions QWERTY. Utilise Capturer pour ta disposition de clavier. Échap annule.",
+  "recording": "Appuie sur une commande…",
+  "captureHelp": "Capture une touche, ou le bouton souris 3, 4 ou 5 pour ouvrir la roue. Les clics gauche/droit restent réservés à sélectionner/revenir. Pour les boutons supplémentaires, configure une touche clavier dans le logiciel de ta souris. Les lettres indiquent les positions QWERTY. Échap annule.",
   "mode": "Comportement de la touche en jeu",
   "toggle": "Basculer",
   "timing": "Saisie et roue",
@@ -203,5 +203,7 @@
   "updateWrite": "Impossible d’enregistrer la mise à jour à côté de cet exécutable. Déplacez SERAPOD dans un dossier accessible en écriture puis réessayez ; aucun exécutable existant n’a été remplacé.",
   "updateIntegrity": "Le fichier reçu ne correspond pas à l’empreinte ou à la taille publiée. Il ne sera pas lancé. Votre version actuelle reste inchangée.",
   "updateRestart": "La nouvelle version n’a pas pu démarrer. Vous pouvez continuer à utiliser celle-ci ou télécharger la release manuellement sur GitHub.",
-  "updateCleanup": "La mise à jour fonctionne, mais Windows n’a pas pu supprimer l’ancien exécutable. Vous pouvez supprimer l’ancienne version manuellement."
+  "updateCleanup": "La mise à jour fonctionne, mais Windows n’a pas pu supprimer l’ancien exécutable. Vous pouvez supprimer l’ancienne version manuellement.",
+  "mouseMiddle": "Souris 3 (molette)",
+  "exportFailed": "Impossible d’enregistrer l’export. Choisis un autre emplacement et réessaie."
 }

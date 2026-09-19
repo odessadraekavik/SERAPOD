@@ -108,6 +108,10 @@ The first loadout includes Reinforce, Resupply, Orbital Precision Strike, Orbita
 
 Physical key bindings use scan codes: displayed letter positions follow QWERTY. Use **Capture** to bind the intended physical key on AZERTY or another layout. The game-menu hold/toggle setting must match your game settings.
 
+From **0.8.2**, the wheel shortcut also supports **Mouse 3 (middle click), Mouse 4, and Mouse 5**, selectable from the list or with **Capture**. Left and right clicks remain reserved for select/back. Buttons beyond Mouse 5 depend on the mouse driver: map them to a supported keyboard key in your mouse software, then capture that key. Software-generated mappings may depend on the driver; native recognition of arbitrary extra HID buttons and gamepad support are not included.
+
+**Export JSON** now opens a native **Save As** dialog in the Windows app, so you can choose the folder and filename. Cancelling leaves your files untouched; success is reported only after the write completes. The browser preview uses the browser's download behavior.
+
 From **0.8.1**, the delay between keys defaults to **150 ms** and can be adjusted from **100 to 300 ms**. Previously saved or imported delays below 100 ms are upgraded to 150 ms while preserving profiles. Key press duration is a separate setting and is added to this delay.
 
 ## Updates & local storage

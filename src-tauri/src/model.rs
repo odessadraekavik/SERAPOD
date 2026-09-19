@@ -128,7 +128,7 @@ impl Config {
         let keys = [&s.trigger, &s.game_key, &s.up, &s.down, &s.left, &s.right];
         for (i, key) in keys.iter().enumerate() {
             if scan(key).is_none()
-                && !(i == 0 && (key.as_str() == "Mouse4" || key.as_str() == "Mouse5"))
+                && !(i == 0 && (["Mouse3", "Mouse4", "Mouse5"].contains(&key.as_str())))
             {
                 return Err("invalidKey".into());
             }

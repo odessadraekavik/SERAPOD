@@ -11,7 +11,7 @@
  import {version} from '../package.json';
  import {dropEntry,findNode,wheelDropTarget} from './lib/drag.js';
  import {translate,resolveLocale,languages} from './lib/i18n.js';
- import {defaults,initialProfile,getFolder,keyOptions,uid,sectorAt,validateState,validateSettings} from './lib/model.js';
+ import {defaults,initialProfile,getFolder,keyOptions,uid,sectorAt,validateState,validateSettings,mouseCode} from './lib/model.js';
 
  const native=!!window.__TAURI_INTERNALS__;
  const overlay=new URLSearchParams(location.search).has('overlay');
@@ -25,7 +25,7 @@
  let locale=$derived(resolveLocale(settings.language,systemLocale));
  const t=(key,params={})=>translate(locale,key,params);
  const named=n=>n.nameKey?t(n.nameKey):n.name;
- const keyLabel=key=>({ControlLeft:'Ctrl L',ControlRight:'Ctrl R',ShiftLeft:'Shift L',ShiftRight:'Shift R',AltLeft:'Alt L',AltRight:'Alt R',ArrowUp:t('up'),ArrowDown:t('down'),ArrowLeft:t('left'),ArrowRight:t('right'),Mouse4:`${t('mouse')} 4`,Mouse5:`${t('mouse')} 5`}[key]||key.replace('Key','').replace('Digit',''));
+ const keyLabel=key=>({ControlLeft:'Ctrl L',ControlRight:'Ctrl R',ShiftLeft:'Shift L',ShiftRight:'Shift R',AltLeft:'Alt L',AltRight:'Alt R',ArrowUp:t('up'),ArrowDown:t('down'),ArrowLeft:t('left'),ArrowRight:t('right'),Mouse3:t('mouseMiddle'),Mouse4:`${t('mouse')} 4`,Mouse5:`${t('mouse')} 5`}[key]||key.replace('Key','').replace('Digit',''));
  let page=$state('editor'),path=$state([]),search=$state(''),category=$state('all');
  let updater=$state(),updateOpen=$state(false);
  let selected=$state(-1),toast=$state(null),noticeTimer;
@@ -112,7 +112,27 @@
  }
  function cloneProfile(){if(profiles.length>=32)return flash('maxProfiles');const p=JSON.parse(JSON.stringify(profile));function ids(n){n.id=uid();n.children?.forEach(ids);}ids(p.root);p.id=uid();p.name=(named(profile)+' — '+t('copy')).slice(0,80);delete p.nameKey;profiles.push(p);activeId=p.id;path=[];}
  function deleteProfile(p){if(confirm(t('deleteConfirm',{name:named(p)}))){profiles=profiles.filter(x=>x.id!==p.id);if(activeId===p.id)activeId=profiles[0].id;path=[];}}
- function exportProfiles(){const url=URL.createObjectURL(new Blob([JSON.stringify(snapshotState(),null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='serapod-profiles.json';a.click();URL.revokeObjectURL(url);flash('exported');}
+ let exporting=$state(false);
+ async function exportProfiles(){
+  if(exporting)return;exporting=true;
+  try{
+   const data=JSON.stringify(snapshotState(),null,2);
+   if(native){if(await invoke('export_profiles',{data}))flash('exported');}
+   else {const url=URL.createObjectURL(new Blob([data],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='serapod-profiles.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  }catch{flash('exportFailed');}finally{exporting=false;}
+ }
+ function captureMouse(e){
+  if(!recording){
+   if(!overlay&&!updateOpen&&mouseCode(e.button)===settings.trigger){e.preventDefault();e.stopPropagation();previewHeld=true;openPreview();}
+   return;
+  }
+  if(recording!=='trigger')return;
+  const code=mouseCode(e.button);if(!code)return;
+  e.preventDefault();e.stopPropagation();settings.trigger=code;recording='';
+  suppressClick=true;setTimeout(()=>suppressClick=false,500);
+ }
+ function releaseMouse(e){if(mouseCode(e.button)===settings.trigger&&previewHeld){e.preventDefault();previewHeld=false;if(preview)commitPreview();}}
+
  async function importProfiles(e){const file=e.target.files?.[0];if(!file)return;try{if(file.size>2e6)throw Error('fileTooLarge');const data=validateState(JSON.parse(await file.text()),catalog);profiles=data.profiles;activeId=data.activeId;settings={...defaults,...data.settings};path=[];flash('imported');}catch(e){flash(e instanceof SyntaxError?'invalidFile':String(e.message));}e.target.value='';}
  async function testOverlay(){if(!native)return flash('nativeOnly');try{await invoke('test_overlay');}catch(e){flash(String(e));}}
  async function restartOverlay(){try{await invoke('restart_overlay');}catch(e){flash(String(e));}}
@@ -152,7 +172,7 @@
  });
 </script>
 
-<svelte:window onkeydown={keydown} onkeyup={keyup} onpointerdown={dismissItemMenu} onscroll={()=>itemMenu=null} onresize={()=>itemMenu=null} onpointermove={dragMove} onpointerup={finishDrag} onpointercancel={cancelDrag} ondragstart={e=>e.preventDefault()} onclickcapture={captureClick} onblur={()=>{itemMenu=null;cancelDrag();previewHeld=false;recording='';cancelPreview();}} />
+<svelte:window onpointerdowncapture={captureMouse} onauxclick={e=>{if(suppressClick)e.preventDefault();}} onkeydown={keydown} onkeyup={keyup} onpointerdown={dismissItemMenu} onscroll={()=>itemMenu=null} onresize={()=>itemMenu=null} onpointermove={dragMove} onpointerup={e=>{releaseMouse(e);finishDrag(e);}} onpointercancel={cancelDrag} ondragstart={e=>e.preventDefault()} onclickcapture={captureClick} onblur={()=>{itemMenu=null;cancelDrag();previewHeld=false;recording='';cancelPreview();}} />
 
 {#if overlay}
  <div class="native-overlay" style:visibility={nativeFrame.open?'visible':'hidden'}>
@@ -219,7 +239,7 @@
      {#each profiles as p}<div class="profile-row"><button class:chosen={p.id===activeId} onclick={()=>{activeId=p.id;path=[];}}><strong>{named(p)}<small>{t('rootSectors',{count:p.root.children.length})}</small></strong>{#if p.id===activeId}<span class="tag">{t('active')}</span>{/if}</button><button class="icon-button" aria-label={t('deleteProfile',{name:named(p)})} disabled={profiles.length===1} onclick={()=>deleteProfile(p)}>×</button></div>{/each}
      <form class="new-folder" onsubmit={e=>{e.preventDefault();newProfile();}}><input placeholder={t('newProfile')} aria-label={t('newProfile')} maxlength="80" bind:value={profileName}/><button class="primary">＋ {t('create')}</button></form>
      <label class="setting-row"><span>{t('profileName')}</span><input value={named(profile)} maxlength="80" onchange={e=>{if(e.target.value.trim()){profile.name=e.target.value.trim();delete profile.nameKey;}else e.target.value=named(profile);}}/></label><button class="duplicate-button" onclick={cloneProfile}>{t('duplicate')}</button>
-    </section><section class="panel settings-panel"><div class="panel-heading"><h2>{t('transfer')}</h2></div><p class="section-description">{t('transferHelp')}</p><div class="button-row"><button class="primary" onclick={exportProfiles}>{t('export')}</button><button onclick={()=>importInput.click()}>{t('import')}</button><input bind:this={importInput} type="file" accept=".json,application/json" hidden onchange={importProfiles}/></div><p class="muted">{t('importHelp')}</p><div class="info-box"><strong>{t('credits')}</strong><p>{t('creditsText')}</p><p>{t('unaffiliated')}</p></div></section></div>
+    </section><section class="panel settings-panel"><div class="panel-heading"><h2>{t('transfer')}</h2></div><p class="section-description">{t('transferHelp')}</p><div class="button-row"><button class="primary" disabled={exporting} onclick={exportProfiles}>{t('export')}</button><button onclick={()=>importInput.click()}>{t('import')}</button><input bind:this={importInput} type="file" accept=".json,application/json" hidden onchange={importProfiles}/></div><p class="muted">{t('importHelp')}</p><div class="info-box"><strong>{t('credits')}</strong><p>{t('creditsText')}</p><p>{t('unaffiliated')}</p></div></section></div>
    {/if}
    <footer><span>{t('saved')}</span></footer>
   </main>

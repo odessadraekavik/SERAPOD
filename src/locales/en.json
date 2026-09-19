@@ -62,8 +62,8 @@
   "left": "Left",
   "right": "Right",
   "capture": "Capture",
-  "recording": "Press a key…",
-  "captureHelp": "Letters show physical QWERTY positions. Use Capture for your keyboard layout. Escape cancels.",
+  "recording": "Press an input…",
+  "captureHelp": "Capture a keyboard key, or mouse button 3, 4 or 5 for the wheel shortcut. Left/right clicks stay reserved for select/back. Extra mouse buttons must be mapped to a keyboard key in your mouse software. Letters show QWERTY positions. Escape cancels.",
   "mode": "In-game key behaviour",
   "toggle": "Toggle",
   "timing": "Timing & wheel",
@@ -203,5 +203,7 @@
   "updateWrite": "The update could not be saved next to this executable. Move SERAPOD to a writable folder and try again; no existing executable was replaced.",
   "updateIntegrity": "The downloaded file did not match the release checksum or size. It will not be launched. Your current version is unchanged.",
   "updateRestart": "The new version could not start. Keep using this version, or download the release manually from GitHub.",
-  "updateCleanup": "The update is running, but Windows could not remove the old executable. You can delete the older version manually."
+  "updateCleanup": "The update is running, but Windows could not remove the old executable. You can delete the older version manually.",
+  "mouseMiddle": "Mouse 3 (middle)",
+  "exportFailed": "Could not save the export. Choose another location and try again."
 }

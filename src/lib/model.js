@@ -3,7 +3,7 @@ export const arrows={Up:'↑',Right:'→',Down:'↓',Left:'←'};
 export const uid=()=>crypto.randomUUID();
 export const sequence=code=>code.map(x=>arrows[x]).join(' ');
 export const defaults={language:'auto',glass:true,transparency:35,trigger:'F1',gameKey:'ControlLeft',mode:'hold',up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight',pressMs:45,gapMs:150,size:560,deadzone:70,sensitivity:1};
-export const keyOptions=['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','Mouse4','Mouse5','ControlLeft','ControlRight','AltLeft','AltRight','ShiftLeft','ShiftRight','Tab','Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight',...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(x=>'Key'+x),...'0123456789'.split('').map(x=>'Digit'+x)];
+export const keyOptions=['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','Mouse3','Mouse4','Mouse5','ControlLeft','ControlRight','AltLeft','AltRight','ShiftLeft','ShiftRight','Tab','Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight',...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(x=>'Key'+x),...'0123456789'.split('').map(x=>'Digit'+x)];
 export const keyLabel=s=>s.replace('Control','Ctrl ').replace('Left','G').replace('Right','D').replace('Shift','Maj ').replace('Key','').replace('Digit','').replace('ArrowUp','↑').replace('ArrowDown','↓').replace('ArrowG','←').replace('ArrowD','→').replace('Mouse4','Souris 4').replace('Mouse5','Souris 5');
 export function initialProfile(catalog){
  const item=name=>{const c=catalog.find(x=>x.name.toLowerCase()===name.toLowerCase())||catalog.find(x=>x.name.toLowerCase().endsWith(' '+name.toLowerCase()));return c?{id:uid(),kind:'stratagem',stratagemId:c.id}:null;};
@@ -46,3 +46,5 @@ export function validateState(data,catalog){
  if(!profileIds.has(data.activeId))throw Error('missingProfile');return data;
 }
 
+
+export const mouseCode=button=>({1:'Mouse3',3:'Mouse4',4:'Mouse5'}[button]??null);

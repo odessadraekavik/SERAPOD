@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {sectorAt,defaults,initialProfile,validateState,validateSettings,getFolder,sectorPath} from '../src/lib/model.js';
+import {sectorAt,defaults,initialProfile,validateState,validateSettings,getFolder,sectorPath,mouseCode,keyOptions} from '../src/lib/model.js';
 const catalog=JSON.parse(await readFile(new URL('../src/data/catalog.json',import.meta.url),'utf8'));
 test('timing limits and legacy imports preserve profiles when upgrading fast delays',()=>{
  assert.equal(defaults.gapMs,150);
@@ -46,4 +46,14 @@ test('profile import validates references, settings, sizes and duplicate identit
  const badRef=structuredClone(data);badRef.profiles[0].root.children[0].stratagemId='unknown';assert.throws(()=>validateState(badRef,catalog));
  assert.ok(validateSettings({...defaults,trigger:'ControlLeft'}));assert.ok(validateSettings({...defaults,pressMs:-1}));
  assert.equal(getFolder(p.root,['missing']),p.root);
+});
+
+test('mouse shortcuts reserve primary buttons and map browser button indices',()=>{
+ assert.equal(mouseCode(0),null);assert.equal(mouseCode(2),null);assert.equal(mouseCode(5),null);
+ for(const [button,key] of [[1,'Mouse3'],[3,'Mouse4'],[4,'Mouse5']]){
+  assert.equal(mouseCode(button),key);assert.ok(keyOptions.includes(key));
+  assert.equal(validateSettings({...defaults,trigger:key}),'');
+  assert.equal(validateSettings({...defaults,gameKey:key}),'keyboardOnly');
+ }
+ for(const trigger of ['Mouse1','Mouse2','Mouse6'])assert.equal(validateSettings({...defaults,trigger}),'invalidKey');
 });

@@ -8,6 +8,22 @@ use model::Config;
 use tauri::Manager;
 
 #[tauri::command]
+async fn export_profiles(window: tauri::WebviewWindow, data: String) -> Result<bool, String> {
+    if window.label() != "main" { return Err("unauthorized".into()); }
+    if data.len() > 2_000_000 || serde_json::from_str::<serde_json::Value>(&data).is_err() {
+        return Err("invalidFile".into());
+    }
+    let file = rfd::AsyncFileDialog::new()
+        .set_parent(&window)
+        .add_filter("JSON", &["json"])
+        .set_file_name("serapod-profiles.json")
+        .save_file().await;
+    let Some(file) = file else { return Ok(false); };
+    file.write(data.as_bytes()).await.map_err(|_| "exportFailed".to_string())?;
+    Ok(true)
+}
+
+#[tauri::command]
 fn configure(window: tauri::WebviewWindow, config: Config) -> Result<(), String> {
     if window.label() != "main" {
         return Err("unauthorized".into());
@@ -71,6 +87,7 @@ fn main() {
         })
         .invoke_handler(tauri::generate_handler![
             configure,
+            export_profiles,
             status,
             overlay_ready,
             system_locale,
