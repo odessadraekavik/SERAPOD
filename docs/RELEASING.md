@@ -6,6 +6,7 @@
 4. Attach `portable/SERAPOD-<version>.exe` and `SHA256SUMS.txt`. Never rename an executable from another version.
 5. Check the release asset's `digest` in GitHub's Releases API. The updater requires `sha256:<64 hex characters>`, the exact file name, and a stable SemVer newer than the running app. Publish as latest after attaching the executable.
 6. Verify the version prompt, No, download, progress, restart, preservation of profiles, and deletion of the previous executable in a disposable writable directory.
+7. After publishing, run `node scripts/release-badge.mjs` and commit/push `medias/release-badge.svg` to update the README badge without an external badge service.
 
 The updater only accepts this repository's HTTPS release assets. Network failures do not block startup. Download/install requires confirmation. Existing executables with different contents are never overwritten. The previous live process's versioned executable is removed only after the replacement frontend loads. Published release binaries must remain immutable.
 
