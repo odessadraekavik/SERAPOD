@@ -10,6 +10,8 @@
 
 Implementation references:
 
+- TD-110 Maelstrom catalogue addition: Helldivers Wiki stratagem listing, checked September 24, 2026: https://helldivers.wiki.gg/wiki/Stratagem. Icon added from the nvigneux repository above on the same date.
+
 - Tauri: https://v2.tauri.app/reference/config/
 - Windows prerequisites: https://v2.tauri.app/start/prerequisites/
 - Microsoft LowLevelMouseProc: https://learn.microsoft.com/en-us/windows/win32/winmsg/lowlevelmouseproc

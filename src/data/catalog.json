@@ -1179,6 +1179,26 @@
     "cooldown": "780s"
   },
   {
+    "id": "td-110-maelstrom",
+    "name": "TD-110 Maelstrom",
+    "category": "Vehicles",
+    "code": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Left",
+      "Down",
+      "Up",
+      "Left",
+      "Right"
+    ],
+    "icon": "/icons/td-110-maelstrom.svg",
+    "source": "https://helldivers.wiki.gg/wiki/TD-110_Maelstrom",
+    "wikiIcon": "",
+    "cooldown": "780s"
+  },
+  {
     "id": "exo-55-breakthrough-exosuit",
     "name": "EXO-55 Breakthrough Exosuit",
     "category": "Vehicles",

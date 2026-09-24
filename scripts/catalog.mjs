@@ -18,6 +18,8 @@ $('summary, table.wikitable').each((_,el)=>{
     catalog.push({id,name,category,code,icon:'/icons/fallback.svg',source:'https://helldivers.wiki.gg/wiki/Stratagems',wikiIcon:cells.eq(0).find('img').attr('src')||'',cooldown:cells.eq(3).text().trim()});
   });
 });
+// Supplement older wiki snapshots with the September 2026 vehicle addition.
+if(!catalog.some(item=>item.id==='td-110-maelstrom'))catalog.push({id:'td-110-maelstrom',name:'TD-110 Maelstrom',category:'Vehicles',code:['Left','Down','Right','Down','Left','Down','Up','Left','Right'],icon:'/icons/td-110-maelstrom.svg',source:'https://helldivers.wiki.gg/wiki/TD-110_Maelstrom',wikiIcon:'',cooldown:'780s'});
 await mkdir('public/icons',{recursive:true});
 await mkdir('src/data',{recursive:true});
 // Icons are downloaded once by setup; never fetched while playing.
